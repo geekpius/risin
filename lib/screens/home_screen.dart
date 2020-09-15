@@ -1,26 +1,20 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
-  static const nameRoute = 'home';
-
+  static const nameRoute = 'home_tab';
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Risin'),
-        actions: [
-          Icon(Icons.search),
-          Icon(Icons.more_vert)
-        ],
-//          actions: [
-//          Icon(Icons.favorite),
-//      Padding(
-//        padding: EdgeInsets.symmetric(horizontal: 16),
-//        child: Icon(Icons.search),
-//      ),
-//      Icon(Icons.more_vert),
+    return Container(
+      child: Center(
+        child: Padding(
+          padding: EdgeInsets.all(40),
+          child: Text(
+            'Great',
+            style: TextStyle(fontSize: 100),
+          ),
+        ),
       ),
-      body: Container(),
     );
   }
 }
+

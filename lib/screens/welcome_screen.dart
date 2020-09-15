@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:risin/constants.dart';
+import 'package:risin/screens/tab_screen.dart';
 import 'package:risin/widgets/rounded_icon_button.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -27,7 +28,7 @@ class WelcomeScreen extends StatelessWidget {
                       fontWeight: FontWeight.w700),
                 ),
                 Text(
-                  'Your finance bucket',
+                  'Your financial buckets',
                   style: TextStyle(
                     color: kLightBlueAccent,
                     fontSize: 18,
@@ -49,11 +50,13 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 50,
+                  height: 120,
                 ),
                 Center(
                   child: RoundedIconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, TabHomeScreen.nameRoute);
+                    },
                     text: Text(
                       'Login With Google',
                       style: TextStyle(
@@ -69,7 +72,9 @@ class WelcomeScreen extends StatelessWidget {
                 ),
                 Center(
                   child: RoundedIconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, TabHomeScreen.nameRoute);
+                    },
                     text: Text(
                       'Login With Facebook',
                       style: TextStyle(

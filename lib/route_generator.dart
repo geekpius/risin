@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:risin/screens/home_screen.dart';
+import 'package:risin/screens/tab_screen.dart';
 import 'package:risin/screens/welcome_screen.dart';
 
 class RouteGenerator {
@@ -9,8 +9,8 @@ class RouteGenerator {
     switch (settings.name) {
       case WelcomeScreen.nameRoute:
         return MaterialPageRoute(builder: (context) => WelcomeScreen());
-      case HomeScreen.nameRoute:
-        return MaterialPageRoute(builder: (context) => HomeScreen());
+      case TabHomeScreen.nameRoute:
+        return MaterialPageRoute(builder: (context) => TabHomeScreen());
 //      case 'location':
 //        return MaterialPageRoute(
 //          builder: (context) => LocationScreen(
