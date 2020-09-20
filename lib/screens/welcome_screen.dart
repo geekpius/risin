@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:risin/constants.dart';
-import 'package:risin/screens/tab_screen.dart';
+import 'package:risin/screens/home_screen.dart';
 import 'package:risin/widgets/rounded_icon_button.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -55,7 +55,7 @@ class WelcomeScreen extends StatelessWidget {
                 Center(
                   child: RoundedIconButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, TabHomeScreen.nameRoute);
+                      Navigator.pushNamed(context, HomeScreen.nameRoute);
                     },
                     text: Text(
                       'Login With Google',
@@ -73,7 +73,7 @@ class WelcomeScreen extends StatelessWidget {
                 Center(
                   child: RoundedIconButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, TabHomeScreen.nameRoute);
+                      Navigator.pushNamed(context, HomeScreen.nameRoute);
                     },
                     text: Text(
                       'Login With Facebook',
